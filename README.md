@@ -17,8 +17,11 @@ Anemometer with alarm | วัดความเร็วลม เพื่อ�
 
 
 ## Compatible hardware
-บอร์ดพัฒนา New Micromation Dev Board V.2 Lite with ESP32 [สั่งซื้อ](https://www.imiconsystem.com/product/new-micromation-dev-board-v-2-lite-with-esp32-and-enclosure/)
+1. บอร์ดพัฒนา New Micromation Dev Board V.2 Lite with ESP32 [สั่งซื้อ](https://www.imiconsystem.com/product/new-micromation-dev-board-v-2-lite-with-esp32-and-enclosure/)
 ![New Micromation Dev Board V.2 Lite with ESP32](https://github.com/imiconsystem/micromation-rs485-weather-station/blob/bdf550019d738539710d173fe2b3f02d10287b3d/images/20220909_152200.jpg)
+
+2. RS-FS-N01 RS485 Modbus เซ็นเซอร์วัดความเร็วลม Wind Speed Sensor [สั่งซื้อ](https://www.imiconsystem.com/product/new-micromation-dev-board-v-2-lite-with-esp32-and-enclosure/)
+![RS-FS-N01 RS485 Modbus เซ็นเซอร์วัดความเร็วลม Wind Speed Sensor](https://www.imiconsystem.com/wp-content/uploads/2020/10/RS-FS-N01-3.jpg)
 
 ## Hardware setup
 
