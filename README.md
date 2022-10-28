@@ -77,3 +77,6 @@ SET MODE ประกอบไปด้วย
 - กด Switch ค้างไว้… แล้ว กด EN หรือ reset บน ESP32 1 ครั้ง จากนั้นรอ 6 วินาที จึงปล่อยปุ่ม Switch
 - จากนั้นกด กด EN หรือ reset บน ESP32 อีก 1 ครั้ง โปรแกรมจะเข้าสู่ค่าเริ่มต้น
 - เข้าสู่ SET MODE เพื่อทำการตั้งค่าใหม่
+
+## Change logs
+- 28/10/2022 fixed duplicated variable name 'maxSpd2'
