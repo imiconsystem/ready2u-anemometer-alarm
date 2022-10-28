@@ -230,7 +230,7 @@ Set value = 0 to disable relay.\
 </body>\
 </html>",
 
-           storageGetString("WiFissid"), storageGetString("WiFipassword"), maxSpd1, maxSpd3, maxSpd3, maxSpd4, storageGetString("webTitle"), storageGetString("deviceName"), storageGetString("APssid"), storageGetString("APpassword"));
+           storageGetString("WiFissid"), storageGetString("WiFipassword"), maxSpd1, maxSpd2, maxSpd3, maxSpd4, storageGetString("webTitle"), storageGetString("deviceName"), storageGetString("APssid"), storageGetString("APpassword"));
   server.send(200, "text/html", html);
 }
 
