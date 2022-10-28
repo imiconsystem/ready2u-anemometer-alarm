@@ -114,26 +114,26 @@ void handleRoot() {
   relay2Text = "OFF";
   relay3Text = "OFF";
   relay4Text = "OFF";
-
-  if (WINSPD > maxSpd1) {
+    
+  if (relayIsOn(R1)) {
     maxSpd1Class = "alert";
     relay1Text = "ON";
   } else
     maxSpd1Class = "normal";
 
-  if (WINSPD > maxSpd2) {
+  if (relayIsOn(R2)) {
     maxSpd2Class = "alert";
     relay2Text = "ON";
   } else
     maxSpd2Class = "normal";
 
-  if (WINSPD > maxSpd3) {
+  if (relayIsOn(R3)) {
     maxSpd3Class = "alert";
     relay3Text = "ON";
   } else
     maxSpd3Class = "normal";
 
-  if (WINSPD > maxSpd4) {
+  if (relayIsOn(R4)) {
     maxSpd4Class = "alert";
     relay4Text = "ON";
   } else
@@ -230,7 +230,7 @@ Set value = 0 to disable relay.\
 </body>\
 </html>",
 
-           storageGetString("WiFissid"), storageGetString("WiFipassword"), maxSpd1, maxSpd2, maxSpd3, maxSpd4, storageGetString("webTitle"), storageGetString("deviceName"), storageGetString("APssid"), storageGetString("APpassword"));
+           storageGetString("WiFissid"), storageGetString("WiFipassword"), maxSpd1, maxSpd3, maxSpd3, maxSpd4, storageGetString("webTitle"), storageGetString("deviceName"), storageGetString("APssid"), storageGetString("APpassword"));
   server.send(200, "text/html", html);
 }
 

@@ -79,4 +79,6 @@ SET MODE ประกอบไปด้วย
 - เข้าสู่ SET MODE เพื่อทำการตั้งค่าใหม่
 
 ## Change logs
-- 28/10/2022 fixed duplicated variable name 'maxSpd2'
+28/10/2022
+ - Fixed duplicated variable name 'maxSpd2'
+ - Add function to check relay state.
