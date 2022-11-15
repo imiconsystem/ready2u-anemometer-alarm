@@ -114,26 +114,26 @@ void handleRoot() {
   relay2Text = "OFF";
   relay3Text = "OFF";
   relay4Text = "OFF";
-
-  if (WINSPD > maxSpd1) {
+    
+  if (relayIsOn(R1)) {
     maxSpd1Class = "alert";
     relay1Text = "ON";
   } else
     maxSpd1Class = "normal";
 
-  if (WINSPD > maxSpd2) {
+  if (relayIsOn(R2)) {
     maxSpd2Class = "alert";
     relay2Text = "ON";
   } else
     maxSpd2Class = "normal";
 
-  if (WINSPD > maxSpd3) {
+  if (relayIsOn(R3)) {
     maxSpd3Class = "alert";
     relay3Text = "ON";
   } else
     maxSpd3Class = "normal";
 
-  if (WINSPD > maxSpd4) {
+  if (relayIsOn(R4)) {
     maxSpd4Class = "alert";
     relay4Text = "ON";
   } else
