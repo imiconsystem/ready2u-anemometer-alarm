@@ -1,6 +1,6 @@
 # Ready to use Anemometer with alarm
 
-![Anemometer with alarm](https://www.imiconsystem.com/wp-content/uploads/2022/08/alarm.jpg)
+![Anemometer with alarm](https://github.com/imiconsystem/ready2u-anemometer-alarm/blob/dev/images/cover.png)
 
 Anemometer with alarm | วัดความเร็วลม เพื่อการแจ้งเตือน หรือควบคุมสั่งการอัตโนมัติ พร้อม Web Monitoring & WiFi management สำหรับ New Micromation Dev Board V.2 Lite with ESP32 ใช้ในการแสดงผลค่าต่างที่วัดได้ และการตั้งค่าต่างๆ ผ่านเว็บบราวเซอร์
 
