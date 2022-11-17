@@ -71,5 +71,6 @@ SET MODE ประกอบไปด้วย
 28/10/2022
  - Fixed duplicated variable name 'maxSpd2'
  - Add function to check relay state.
+ 
 17/11/2022
 - Fixed LED_BUILTIN not declare error.
