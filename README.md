@@ -1,6 +1,6 @@
 # Ready to use Anemometer with alarm
 
-![Anemometer with alarm](https://github.com/imiconsystem/ready2u-anemometer-alarm/blob/dev/images/cover.png)
+![Anemometer with alarm](https://github.com/imiconsystem/ready2u-anemometer-alarm/blob/main/images/cover.png)
 
 Anemometer with alarm | วัดความเร็วลม เพื่อการแจ้งเตือน หรือควบคุมสั่งการอัตโนมัติ พร้อม Web Monitoring & WiFi management สำหรับ New Micromation Dev Board V.2 Lite with ESP32 ใช้ในการแสดงผลค่าต่างที่วัดได้ และการตั้งค่าต่างๆ ผ่านเว็บบราวเซอร์
 
@@ -28,7 +28,7 @@ Anemometer with alarm | วัดความเร็วลม เพื่อ�
 
 ใช้ Micromation – Lite with RS-485 Module ต่อใช้งานร่วมกับ Wind Speed Sensor RS-FS-N01 ผ่าน RTU / RS-485 ด้วยโปรโตคอล Modbus Protocol โดยใช้คอนโทรลเลอร์ ESP32 Dev Kit V1
 
-![RS-FS-N01 RS485](https://github.com/imiconsystem/ready2u-anemometer-alarm/blob/dev/images/wiring.jpg)
+![RS-FS-N01 RS485](https://github.com/imiconsystem/ready2u-anemometer-alarm/blob/main/images/wiring.jpg)
 
 ** โปรดระมัดระวัง! อย่าต่อแหล่งจ่ายไฟ Power in และ usb ในเวลาเดียวกัน เพราะจะส่งผลให้บอร์ดได้รับความเสียหาย ในบางครั้งอาจรวมไปถึงคอมพิวเตอร์
 
