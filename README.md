@@ -45,7 +45,7 @@ Anemometer with alarm | วัดความเร็วลม เพื่อ�
 1. เปิดโปรแกรม Arduino IDE
 2. เข้าเมนู Tools เลือกบอร์ด DOIT ESP32 DEVKIT V1
 3. เลือกพอร์ต
-4. ดาวน์โหลดโค๊ดโปรแกรม https://github.com/imiconsystem/ready2u-anemometer-alarm/releases
+4. ดาวน์โหลดโค๊ดโปรแกรม https://github.com/imiconsystem/ready2u-anemometer-alarm/releases/tag/v2022.2.0
 5. เปิดไฟล์ ready2u-anemometer-alarm.ino
 6. อัพโหลดไฟล์
 
