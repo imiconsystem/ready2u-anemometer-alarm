@@ -21,6 +21,17 @@ void wifiapSetup() {
   IPAddress myIP = WiFi.softAPIP();
   Serial.print("AP IP address: ");
   Serial.println(myIP);
+  String dis = "";
+  dis.concat("IP: ");
+  dis.concat(myIP.toString());
+  dis.concat("\n");
+  dis.concat("SSID: ");
+  dis.concat(storageGetString("APssid"));
+  dis.concat("\n");
+  dis.concat("PW: ");
+  dis.concat(storageGetString("APpassword"));
+  dis.concat("\n");
+  logString = dis;
 
 
   server.on("/", configForm);
@@ -45,6 +56,7 @@ void webserverSetup() {
   WiFi.begin(storageGetString("WiFissid").c_str(), storageGetString("WiFipassword").c_str());
   if (WiFi.status() != WL_CONNECTED) {
     blinkWiFiLoss();
+    beepWiFiLoss();
     delay(1000);
   }
   //Wait for connection
@@ -52,6 +64,7 @@ void webserverSetup() {
 
     //Serial.println(WiFi.status());
     blinkWiFiLoss();
+    beepWiFiLoss();
     delay(1000);
     previousMillis = currentMillis;
   }
@@ -77,6 +90,7 @@ void webserverLoop() {
   while ((WiFi.status() != WL_CONNECTED) && (currentMillis - previousMillis >= interval)) {
     //Serial.println(WiFi.status());
     blinkWiFiLoss();
+    beepWiFiLoss();
     Serial.println("Reconnecting to WiFi...");
     WiFi.disconnect();
     WiFi.reconnect();
@@ -114,7 +128,7 @@ void handleRoot() {
   relay2Text = "OFF";
   relay3Text = "OFF";
   relay4Text = "OFF";
-    
+
   if (relayIsOn(R1)) {
     maxSpd1Class = "alert";
     relay1Text = "ON";

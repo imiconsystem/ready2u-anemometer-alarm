@@ -23,6 +23,8 @@ String device_name = "anemo";
 int32_t maxSpd1, maxSpd2, maxSpd3, maxSpd4;
 float_t WINSPD;
 
+String logString;
+
 
 struct ALARMLEV {
   String word;
@@ -31,13 +33,16 @@ struct ALARMLEV {
 struct ALARMLEV alarmlev = {};
 
 void setup() {
-
+  beep();
   Serial.begin(115200);  // For debug
   Serial.println("ESP start.");
   serialSetup();
+  oledSetup();
+  oledLogSetup();
   relaySetup();
   resetbuttonSetup();
   storageSetup();
+  buzzer_setup();
 
   WINSPD = 0;
 
@@ -45,14 +50,19 @@ void setup() {
   {
     SETMODE = true;
     wifiapSetup();
+    oledLogLoop();
 
 
 
   } else if (SETMODE == 2) {  // RESET FACTORY
+    logString = "Wait 10 seconds then push EN(reset) button.";
+    oledLogLoop();
     storageClear();
     // ESP.restart();
   } else {
     // RUN
+    logString = "System starting..";
+    oledLogLoop();
     webserverSetup();
   }
 }
@@ -79,16 +89,15 @@ void loop() {
     clientLoop();
     serialLoop();
     controlRelay();
+    oledLoop();
   } else if (SETMODE == 1)  // SET
   {
     Serial.println("SET MODE.");
     clientLoop();
     blinkSet();
-  }
-  else if (SETMODE == 2) {  //RESET
+  } else if (SETMODE == 2) {  //RESET
     blinkReset();
-  }
-  else {
+  } else {
     Serial.println("CLIENT MODE.");
     clientLoop();
   }
